@@ -1,4 +1,4 @@
-package com.example.materialdesigntest;
+package com.example.materialdesigntest.activity;
 
 import android.graphics.drawable.AnimationDrawable;
 import android.net.Uri;
@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.example.ca.materialdesigntest.R;
+import com.example.materialdesigntest.fragment.BlankFragment;
 
 public class MainActivity extends AppCompatActivity implements BlankFragment.OnFragmentInteractionListener {
     private Toolbar mToolbar;

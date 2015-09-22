@@ -1,4 +1,4 @@
-package com.example.materialdesigntest;
+package com.example.materialdesigntest.fragment;
 
 import android.app.Activity;
 import android.net.Uri;
