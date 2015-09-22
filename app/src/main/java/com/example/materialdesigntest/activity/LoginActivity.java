@@ -1,10 +1,12 @@
 package com.example.materialdesigntest.activity;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AutoCompleteTextView;
+import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.ca.materialdesigntest.R;
@@ -40,14 +42,28 @@ public class LoginActivity extends AppCompatActivity{
     private SignInButton mPlusSignInButton;
     private View mSignOutButtons;
     private View mLoginFormView;
+    private Button mSignInButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        findviews();
+        setListeners();
     }
 
+    private void findviews() {
+        mSignInButton= (Button) findViewById(R.id.email_sign_in_button);
+    }
+    private void setListeners(){
+        mSignInButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this,MainActivity.class));
+            }
+        });
+    }
 
 
     /**
