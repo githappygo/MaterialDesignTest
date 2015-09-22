@@ -43,7 +43,7 @@ public class LoginActivity extends AppCompatActivity{
     private View mSignOutButtons;
     private View mLoginFormView;
     private Button mSignInButton;
-
+ 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
