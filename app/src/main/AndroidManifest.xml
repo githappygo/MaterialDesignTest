@@ -19,7 +19,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme.WithoutActionBar" >
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.materialdesigntest.activity.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,7 +28,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name="com.example.materialdesigntest.activity.LoginActivity"
             android:label="@string/title_activity_login"
             android:windowSoftInputMode="adjustResize|stateHidden" >
         </activity>
